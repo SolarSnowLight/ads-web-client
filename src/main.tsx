@@ -1,4 +1,5 @@
 import React from 'react'
+import "./index.scss"
 
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider} from "react-router-dom";

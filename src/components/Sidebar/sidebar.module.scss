@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar {
+  @apply flex flex-col justify-between items-end w-[232px] bg-[#1A1C1E] h-screen
+}
+
+.wrapper_link {
+  @apply
+  flex flex-col items-end justify-start h-full
+}
+
+.item_link {
+  @apply
+  flex justify-start items-center text-white w-[200px] h-[56px] rounded-l-md cursor-pointer transition-all mb-[8px] border-none
+    last:mt-[454px]
+  hover:bg-[#3F4450]
+}
+
+.icon {
+  @apply
+  m-[20px] ml-[16px] mr-[8px]
+}
