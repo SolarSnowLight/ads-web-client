@@ -1,10 +1,12 @@
 import React from 'react';
+import {Header} from "../components";
 
-const Servers = () => {
+const Servers: React.FC = () => {
   return (
-    <>
-      <p>Servers</p>
-    </>
+    <main className="flex flex-col items-center h-screen w-full">
+      <Header title="Доступные серверы"/>
+      <p className="text-2xl">Servers</p>
+    </main>
   );
 }
 

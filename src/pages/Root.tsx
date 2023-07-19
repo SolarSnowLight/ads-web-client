@@ -1,12 +1,23 @@
-import React from 'react';
-import {Outlet} from "react-router-dom";
-import Sidebar from "../components/Sidebar/Sidebar.tsx";
+import React, {useEffect} from 'react';
+import {Outlet, useNavigate} from "react-router-dom";
+import {Sidebar} from "../components/index.tsx";
+import {useLocation} from "react-router";
 
-const Root = () => {
+const Root: React.FC = () => {
 
+  const location = useLocation()
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    if (location.pathname == "/") {
+      navigate("/servers")
+    }
+  }, [])
+
+  console.log(location.pathname)
   return (
     <div className="flex">
-      <Sidebar/>
+      {location.pathname !== "/auth" && <Sidebar/>}
       <Outlet/>
     </div>
   );

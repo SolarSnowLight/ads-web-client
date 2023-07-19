@@ -1,10 +1,10 @@
 import React from 'react';
-import { useRouteError } from "react-router-dom";
-const Error = () => {
+import {useRouteError} from "react-router-dom";
 
-  const error = useRouteError();
-  console.error(error);
 
+const Error: React.FC = () => {
+
+  const error:any = useRouteError();
   return (
     <div id="error-page">
       <h1>Технические шоколадки</h1>

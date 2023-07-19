@@ -1,0 +1,17 @@
+.form {
+  @apply
+  flex flex-col justify-center items-center
+  min-h-[459px] w-[304px]
+
+}
+
+
+.input {
+  @apply
+  w-[256px] h-[56px]
+  mb-[16px]
+  p-[18px]
+  rounded-[12px]
+  border-[1px] border-[#DFE1E5] outline-none
+
+}

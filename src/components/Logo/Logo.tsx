@@ -4,7 +4,7 @@ interface LogoProps {
   fill: string
 }
 
-const Logo: FC<LogoProps> = ({fill}) => {
+const Logo: React.FC<LogoProps> = ({fill}) => {
   return (
     <div className="mx-[33px] my-[64px]">
       <svg width="165.62" height="71" viewBox="0 0 166 71" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,10 +22,10 @@ const Logo: FC<LogoProps> = ({fill}) => {
           fill={fill}/>
         <path
           d="M51.9197 18.3099C47.3193 18.3099 44.3618 25.2107 44.0332 37.3691C44.0332 46.57 48.3051 54.7852 52.577 54.4566C56.8488 54.128 59.8063 49.1989 60.4635 36.7118C61.1207 24.2248 56.5202 18.3099 51.9197 18.3099Z"
-          fill={fill === "#ffff" ? "#1A1C1E" : "ffff"}/>
+          fill={fill === "#ffff" ? "#1A1C1E" : "#ffff"}/>
         <path
           d="M138.343 30.1396C134.728 30.1396 128.485 31.7827 128.485 42.2981C128.485 53.7993 135.386 54.7851 138.343 54.7851C141.3 54.7851 148.201 51.1704 148.201 42.2981C148.201 33.4257 141.958 30.1396 138.343 30.1396Z"
-          fill={fill === "#ffff" ? "#1A1C1E" : "ffff"}/>
+          fill={fill === "#ffff" ? "#1A1C1E" : "#ffff"}/>
       </svg>
     </div>
   )

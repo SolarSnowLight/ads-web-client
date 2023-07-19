@@ -1,0 +1,24 @@
+.header {
+  @apply
+  flex items-center
+  h-[168px] w-full
+}
+
+.header_title {
+  @apply
+  flex flex-col justify-center items-start
+  m-[31px]
+  w-[50%]
+}
+
+
+.header_title h4 {
+  @apply
+  text-[32px]
+  mb-[12px]
+}
+
+.header_title span {
+  @apply
+  text-[18px] text-[#7C7F89]
+}

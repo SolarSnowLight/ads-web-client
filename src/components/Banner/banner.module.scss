@@ -1,0 +1,23 @@
+.banner_container {
+  @apply
+  flex flex-col justify-between items-center
+  h-screen w-[60%]
+  bg-main
+}
+
+
+.title {
+  @apply
+  flex flex-col items-center
+  w-full h-[30%]
+}
+
+.title h1 {
+  @apply
+  text-[48px] text-white
+  mb-[39px]
+}
+.title span {
+  @apply
+  text-[18px] text-white text-center
+}

@@ -7,7 +7,17 @@ export default {
     './pages/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Lato: ['Lato', 'sans-serif'],
+      },
+      colors: {
+        'main': '#510BF4',
+      },
+    },
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
   plugins: [],
 }
